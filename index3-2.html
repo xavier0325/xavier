@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="refresh" content="5;url=正文.html" />
+		<meta charset="utf-8" />
+		<title></title>
+			<style>
+				body{
+					width: 960px;
+					height: 920px;
+				background-image: url(img/穿越.gif);
+				background-repeat: no-repeat;
+				background-size: 960px 100%;
+				background: contain;
+			}
+			#cross{
+				text-align: center;
+				color: lightcyan;
+			}
+			</style>
+			<div id='numDiv'>10</div>
+<script type="text/javascript">
+var num=10;
+var interval=setInterval(function(){
+if(num==0){
+clearInterval(interval);
+}
+numDiv.innerHTML=num--;
+},1000);
+</script>
+
+	</head>
+	<body>
+		<h1 id="cross">兄弟欢迎穿越!</h1>
+	</body>
+</html>
