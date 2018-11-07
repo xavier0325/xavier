@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>xavier-shopmall</title>
+		<style>
+			.body {
+				background-color: red;
+			}
+			
+			.menu {
+				display: flex;
+				flex-wrap: wrap;
+			}
+			
+			.menu li {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+				height: 40px;
+				text-align: center;
+				line-height: 42px;
+				flex-basis: 100%;
+				border-radius: 20px;
+			}
+			
+			.menu li:nth-child(1) {
+				background-color: aliceblue;
+			}
+			
+			.menu li:nth-child(2) {
+				background-color: aliceblue;
+			}
+			
+			.menu li:nth-child(3) {
+				background-color: aliceblue;
+			}
+			
+			.menu li:nth-child(4) {
+				background-color: aliceblue;
+			}
+			
+			.menu li:nth-child(5) {
+				background-color: aliceblue;
+			}
+			
+			.menu li:nth-child(6) {
+				background-color: aliceblue;
+			}
+			
+			.menu li a {
+				text-decoration: none;
+				color: black;
+				font-size: ;
+				font-weight: 900;
+			}
+			
+			@media (min-width:480px) {
+				.menu li {
+					flex-basis: 50%;
+					font-size: small;
+				}
+			}
+			@media (min-width:760px) {
+				.menu li {
+					
+					font-size: medium;
+				}
+			}
+			@media (min-width:768px) {
+				.menu {
+					flex-wrap: nowrap;
+				}
+			}
+			
+			.flex-father {
+				display: flex;
+				flex-wrap: wrap;
+				justify-content: space-around;
+				/*width: 995px;*/
+				height: auto;
+				margin-left: 160px;
+				margin-right: 160px;
+				background-color: lightgrey;
+				/*margin: 0 auto;*/
+			}
+			.flex-father a:hover{
+				border: 1.5px solid red;
+			}
+			.flex-son { 
+				width: 236px;
+				height: 302px;
+				margin: 0;
+				padding: 0;
+			}
+			
+			@media (min-width:900px) {
+				.flex-father {
+					flex-wrap: wrap;
+				}
+			}
+			@media only screen and (max-width:1080px) {
+				.flex-father .flex-son {
+					flex-basis: 100%;
+				}
+			}
+			@media only screen and (min-width:800px) {
+				.flex-father .flex-son {
+					flex-basis: 75%;
+				}
+			}
+			
+			@media only screen and (min-width:480px) {
+			 .flex-father	.flex-son {
+					flex-basis: 50%;
+				}
+			}
+			
+			@media only screen and (max-width:480px) {
+				 .flex-father .flex-son {
+					flex-basis: 25%;
+				}
+			}
+			
+			.flexson-one-price {
+				width: 235px;
+				height: 301px;
+				margin-left: 13px;
+				text-align: center;
+				float: left;
+				display: block;
+				border-bottom: 15px solid #f5f5f5;
+				position: relative;
+				background-color: #fff;
+				text-decoration: none;
+				cursor: pointer;
+			}
+			.flex-sontop {
+				width: 68px;
+				height: 20px;
+				color: #fff;
+				line-height: 20px;
+				font-size: 14px;
+				margin: 0 auto;
+				background-color: #00B262;
+			}
+			
+			.flex-son-img {
+				height: 185px;
+				width: 185px;
+				text-align: center;
+				transition: right .3s;
+				margin-left: -58px;
+				margin-right: auto;
+				
+			}
+			
+			.flex-son-title {
+				width: 135px;
+				height: 40px;
+				font-size: 14px;
+				color: #333;
+				line-height: 20px;
+				overflow: hidden;
+				margin: 8px auto;
+				margin-left: -30px;
+			}
+			
+			.flex-price {
+				font-size: 18px;
+				color: #FF0036;
+				line-height: 18px;
+				margin: 10px auto;
+				margin-left: -5px;
+			}
+		</style>
+	</head>
+
+	<body class="body">
+		<div data-spm="2015001" class="top-con j_top" style="position:relative;display:block flex;height:80px">
+			<div style="background:#6449d0;width:50%;position:absolute;left:0;height:100%;"></div>
+			<div style="background:#6449d0;width:50%;position:absolute;right:0;height:100%;"></div>
+			<img src="//img.alicdn.com/tfs/TB1dh7OnbvpK1RjSZFqXXcXUVXa-990-80.png" width="990" height="80" style="position:relative;top:0;margin:0 auto;z-index:10;" />
+
+			<a aria-label="" href="//1111.tmall.com/?wh_weex=true&amp;wh_biz=tm&amp;acm=lb-zebra-148799-741251.1003.4.4556081&amp;wx_main_hc=true&amp;scm=1003.4.lb-zebra-148799-741251.OTHER_1_4556081" style="display: block;width:100%;position:absolute;left:0;top:0;height:100%;z-index:100;">
+				<img alt="" src="//g.alicdn.com/s.gif" width="100%" height="100%" />
+			</a>
+
+		</div>
+
+		<div id="header" data-spm="a2226n0">
+			<div class="headerLayout">
+				<div class="headerCon">
+					<h1 id="mallLogo">
+                    <span class="mlogo">
+                    
+                     <a href="//www.tmall.com/" title="可以去天猫Tmall.com哦" style="text-decoration: none; color: deepskyblue;"><s></s>-->天猫Tmall.com<--</a>
+                    
+                    </span>
+                    
+                 </h1>
+					<div class="header-extra">
+
+						<div class="header-banner">
+
+						</div>
+
+						<div id="mallSearch" class="mall-search">
+							<form name="searchTop" action="//list.tmall.com/search_product.htm" class="mallSearch-form clearfix" target="_top" acceptCharset="gbk">
+								<fieldset>
+									<legend>低仿版天猫搜索</legend>
+									<div class="mallSearch-input clearfix">
+										<label for="mq">这个应该可以 搜索 天猫 商品/品牌/店铺    <img src="img/QQ图片皮卡丘.gif" width="40px" height="50px" > 欢迎来脾气狗🐶的店铺0.0<img src="img/QQ图片皮卡丘.gif" width="40px" height="50px" style="border-radius: 1px;" >====<img src="img/39a3931072bc9645215740e01ff7818a_t01e33065be951b28c4.jpg" width="400px" height="50px" style="border-radius: 100px;"><a href="https://s.click.taobao.com/xQJFPLw" title="这是我小兄弟淘宝的红包" target="_blank"><img src="img/193a84ae713bc854994f2e447018ae6c_t017129c26c525266bc.png" width="370px" height="50px"></a></label>
+										<div class="s-combobox">
+											<div class="s-combobox-input-wrap">
+												<input style="border-radius: 6px;" type="text" name="q" accesskey="s" autocomplete="off" x-webkit-speech="" x-webkit-grammar="builtin:translate" value="" id="mq" autocomplete="off" />
+											</div>
+										</div>
+										<button type="submit" style="width: 80px; height: 30px; background-color: aliceblue; border-radius: 5px;">天猫搜索<s></s></button>
+										<input id="J_Type" type="hidden" name="type" value="p" />
+										<input id="J_MallSearchStyle" type="hidden" name="style" value="">
+										<input id="J_Cat" type="hidden" name="cat" value="all" />
+										<input type="hidden" name="vmarket" value="">
+									</div>
+								</fieldset>
+							</form>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<ul class="menu">
+			<li><img src="img/23219258_124951321880_2__01.jpg" width="35px" height="30px" style="margin-left: 2px; margin-top: 6px;">
+				<a href="https://pages.tmall.com/wow/a/act/20548/upr?spm=875.7931836/B.category201661811.1.50c74265T3S8dP&wh_weex=true&wh_biz=tm&wh_pid=industry-153904&acm=lb-zebra-148799-983674.1003.4.4481818&scm=1003.4.lb-zebra-148799-983674.OTHER_1_4481818" style="margin-left: -7px;" title="只到男装会场哦" target="_blank">女装/男装</a>
+			</li>
+			<li><img src="img/23219258_124951321880_2__02.jpg" width="35px" height="30px" style="margin-left: 2px; margin-top: 6px;">
+				<a href="https://pages.tmall.com/wow/a/act/20548/upr?spm=875.7931836/B.category201661813.1.50c74265T3S8dP&wh_weex=true&wh_biz=tm&wh_pid=industry-153910&acm=lb-zebra-148799-983674.1003.4.4481818&scm=1003.4.lb-zebra-148799-983674.OTHER_3_4481818" style="margin-left: -7px;" title="男女鞋履会场" target="_blank">女鞋/男鞋</a>
+			</li>
+			<li><img src="img/23219258_124951321880_2__03.jpg" width="35px" height="30px" style="margin-left: 2px; margin-top: 6px;">
+				<a href="https://pages.tmall.com/wow/a/act/20548/upr?spm=875.7931836/B.category201661812.1.50c74265T3S8dP&wh_weex=true&wh_biz=tm&wh_pid=industry-153892&acm=lb-zebra-148799-983674.1003.4.4481818&scm=1003.4.lb-zebra-148799-983674.OTHER_2_4481818" style="margin-left: -7px;" title="运动户外会场" target="_blank">运动/户外</a>
+			</li>
+			<li><img src="img/23219258_124951321880_2__04.jpg" width="35px" height="30px" style="margin-left: 2px; margin-top: 6px;">
+				<a href="https://pages.tmall.com/wow/a/act/20548/upr?spm=875.7931836/B.category201661814.1.50c74265T3S8dP&wh_weex=true&wh_biz=tm&wh_pid=industry-153840&acm=lb-zebra-148799-983674.1003.4.4481818&scm=1003.4.lb-zebra-148799-983674.OTHER_4_4481818" style="margin-left: -7px;" title="食品酒水会场" target="_blank">食品/酒水</a>
+			</li>
+			<li><img src="img/23219258_124951321880_2__05.jpg" width="35px" height="30px" style="margin-left: 2px; margin-top: 6px;">
+				<a href="https://pages.tmall.com/wow/a/act/20548/upr?spm=875.7931836/B.category201661816.1.50c74265T3S8dP&wh_weex=true&wh_biz=tm&wh_pid=industry-153847&acm=lb-zebra-148799-983674.1003.4.4481818&scm=1003.4.lb-zebra-148799-983674.OTHER_6_4481818" style="margin-left: -7px;" title="只到潮流家电会场哦" target="_blank">家电/数码</a>
+			</li>
+			<li><img src="img/23219258_124951321880_2__06.jpg" width="35px" height="30px" style="margin-left: 2px; margin-top: 6px;">
+				<a href="https://pages.tmall.com/wow/a/act/20548/upr?spm=875.7931836/B.category201661818.1.50c74265T3S8dP&wh_weex=true&wh_biz=tm&wh_pid=industry-153919&acm=lb-zebra-148799-983674.1003.4.4481818&scm=1003.4.lb-zebra-148799-983674.OTHER_8_4481818" style="margin-left: -7px;" title="只到家纺家饰会场哦" target="_blank">家饰/灯具</a>
+			</li>
+		</ul>
+		<div class="flex-father">
+			<a class="flexson-one-price " href="//item.taobao.com/item.htm?spm=875.7931836/B.2017081.6.50c74265T3S8dP&amp;id=574683470226&amp;scm=1007.12144.81309.73299_0&amp;pvid=237bb68a-2f2c-4a99-b330-03dccce632eb&amp;utparam=%7B%22x_hestia_source%22%3A%2273299%22%2C%22x_object_type%22%3A%22item%22%2C%22x_mt%22%3A8%2C%22x_src%22%3A%2273299%22%2C%22x_pos%22%3A5%2C%22x_pvid%22%3A%22237bb68a-2f2c-4a99-b330-03dccce632eb%22%2C%22x_object_id%22%3A574683470226%7D" data-spm-anchor-id="875.7931836/B.2017081.6">
+				<div class="flex-son" style="background-color: white;">
+					<div class="flex-sontop">
+						<img class="flex-son-img" src="//gw.alicdn.com/bao/uploaded/i3/3334148301/TB1AJ31ngHqK1RjSZFPXXcwapXa_!!0-item_pic.jpg">
+						<div class="flex-son-title">狗狗衣服泰迪博美秋冬装中小型犬两脚衣棉衣背心猫咪衣服宠物服装</div>
+						<div class="flex-price">￥17.9</div>
+					</div>
+				</div>
+			</a>
+			<a class="flexson-one-price " href="https://paimai.taobao.com/pmp_item/581234713590.htm?spm=a213x.7340941.2001.26.CLpOHu">
+				<div class="flex-son" style="background-color: white;">
+					<div class="flex-sontop">
+						<img class="flex-son-img" src="img/O1CN011xsaVKJNNGECzlK_!!0-paimai.jpg_400x400.jpg">
+						<div class="flex-son-title">兰博基尼Aventador-6.5-AMT-LP700-4 上海</div>
+						<div class="flex-price">￥4,260,000</div>
+					</div>
+				</div>
+			</a>
+			<a class="flexson-one-price " href="https://sf-item.taobao.com/sf_item/579629505898.htm?spm=a213w.7398504.paiList.3.5bee59c2A1IDaa">
+				<div class="flex-son" style="background-color: white;">
+					<div class="flex-sontop">
+						<img class="flex-son-img" src="img/8a6da6d994e3ded1373c80b7f6c39c37_TB1oE14ikvoK1RjSZPfBLJPKFXa_300x1000.jpg">
+						<div class="flex-son-title">北京市大兴区庞各庄镇绿华园 1至2层别墅一幢</div>
+						<div class="flex-price">￥7,724,360</div>
+					</div>
+				</div>
+			</a>
+			<a class="flexson-one-price " href="https://susong-item.taobao.com/auction/558747116950.htm?spm=a213w.7398504.paiList.12.1e346157TuSlwG">
+				<div class="flex-son" style="background-color: white;">
+					<div class="flex-sontop">
+						<img class="flex-son-img" src="img/TB13qq5Xzv85uJjSZFNQTgJApXa_460x460.jpg">
+						<div class="flex-son-title">（破）B-2421飞机机身与3台发动机</div>
+						<div class="flex-price">￥122,600,400</div>
+					</div>
+				</div>
+			</a>
+			<a class="flexson-one-price " href="https://sf-item.taobao.com/sf_item/574833889060.htm?spm=a213w.7398504.paiList.18.3aaa4f39tHgYet">
+				<div class="flex-son" style="background-color: white;">
+					<div class="flex-sontop">
+						<img class="flex-son-img" src="img/TB2elHPbPbguuRkHFrdXXb.LFXa_!!0-paimai.jpg_460x460.jpg">
+						<div class="flex-son-title">福建省北茭村连江洋屿的海岛使用权（8.4327公顷）</div>
+						<div class="flex-price">￥72,000,000</div>
+					</div>
+				</div>
+			</a>
+			<a class="flexson-one-price " href="https://item-paimai.taobao.com/pmp_item/42159785497.htm?s=pmp_detail&spm=a213x.7340941.2001.1.0tdTZx">
+				<div class="flex-son" style="background-color: white;">
+					<div class="flex-sontop">
+						<img class="flex-son-img" src="img/TB1giUaGFXXXXblXpXX1yZJ_FXX_400x400.jpg">
+						<div class="flex-son-title">【中古】全球限量一只满钻镶宝石石英表</div>
+						<div class="flex-price">￥5,080,555</div>
+					</div>
+				</div>
+			</a>
+			<a class="flexson-one-price " href="https://item-paimai.taobao.com/pmp_item/42660333068.htm?s=pmp_detail&spm=a213x.7340941.2001.6.pYGdXr">
+				<div class="flex-son" style="background-color: white;">
+					<div class="flex-sontop">
+						<img class="flex-son-img" src="img/TB1JnFxGVXXXXXOXFXX5ZzC8VXX_400x400.jpg">
+						<div class="flex-son-title">Fazioli 24K金箔三角钢琴 极致奢华 纯手工打造</div>
+						<div class="flex-price">￥5,700,000</div>
+					</div>
+				</div>
+			</a>
+			<a class="flexson-one-price " href="https://detail.tmall.com/item.htm?spm=a220m.1000858.1000725.1.2e8a1c4do9T9iO&id=572906508648&skuId=3902124062112&user_id=4003223843&cat_id=2&is_b=1&rn=08ff5f3cae4811c9cae33a6e372c1dd3">
+				<div class="flex-son" style="background-color: white;">
+					<div class="flex-sontop">
+						<img class="flex-son-img" src="img/1fcef8404fd099321dc23d7b9a964492_TB1lr2rCAyWBuNjy0FpoCussXXa_063828.jpg">
+						<div class="flex-son-title">ROG/玩家国度 i7 4K屏游戏笔记本电脑</div>
+						<div class="flex-price">￥71999.00</div>
+					</div>
+				</div>
+			</a>
+		</div>
+	</body>
+
+</html>
