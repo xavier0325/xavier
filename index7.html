@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+	</head>
+	
+	<script>
+		function button1(){
+			var z=document.getElementById("main");
+			    x=document.createElement("a");
+			    y=document.createTextNode("神奇吧");
+			    z.appendChild(x);
+			    x.appendChild(y);
+			    x.setAttribute("href","#");
+			    x.style.color="red";
+		        x.style.backgroundColor="yellow";
+		}
+		function removeA(){
+			parent=document.getElementById("main");
+			for(var i=parent.children.length-1;i>=0;i--){
+				if(parent.children[i].nodeName=='A'){
+					parent.removeChild(parent.children[i]);
+				}
+			}
+			
+		}
+		function removeP(){
+			parent2=document.getElementById("main");
+			for(var i=parent2.children.length-1;i>=0;i--){
+				if(parent2.children[i].nodeName=='P'){
+					parent2.removeChild(parent2.children[i]);
+				}
+			}
+		}
+		function superbutton(){
+			var parent3=document.getElementById("main");
+			var child3=parent3.children;
+			for(var i=child3.length-1;i>=0;i--){
+				child3[i].style.backgroundColor="red";
+			}
+		}
+	</script>
+	<body>
+		<div id="main" style="border: 2px solid black;">
+			<p>神奇的事将会发生</p>
+			<p>什么</p>
+			<a href="#">我</a>
+			<a href="#">未知</a>
+		</div>
+		<button onclick="button1()">增加一个黄底红色的A元素</button>
+		<button onclick="removeA()">删除所有A元素</button>
+		<button onclick="removeP()">删除所有P元素</button>
+		<button onclick="superbutton()">使所有元素背景色为红色</button>
+	</body>
+</html>
