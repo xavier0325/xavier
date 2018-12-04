@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<title>汐峰智链-新闻动态</title>
+<style>
+	
+	.nav {
+				background-color: #293137;
+				position: relative;
+				color: #ffffff;
+				width: 92%;
+				height: 64px;
+				margin: 0 auto;
+				border: 1px solid #c0c0c0;
+			}
+			
+			.nav a {
+				display: block;
+				text-decoration: none;
+			}
+			
+			.nav .shade {
+				position: absolute;
+				width: 100%;
+				height: 200px;
+				top: 64px;
+				left: 0;
+				z-index: 1;
+				background-color: #EEEEEE;
+				opacity: 0.9;
+				filter: alpha(opacity=90);
+				box-shadow: 0 5px 15px #CCCCCC;
+				display: none;
+				border-bottom: #ffffff solid 1px;
+				border-bottom: rgba(255, 255, 255, 0.3) solid 1px;
+			}
+			
+			.nav .nav_list {
+				position: absolute;
+				top: 0;
+				left: 50%;
+				margin: 0 0 0 -600px;
+				z-index: 2;
+				padding: 0;
+				list-style: none;
+				width: 1200px;
+				overflow: hidden;
+				height: 64px;
+			}
+			
+			.nav .nav_list>li {
+				padding: 0;
+				float: left;
+				margin: 0;
+				width: 120px;
+				text-align: center;
+				height: 264px;
+			}
+			
+			.nav .nav_head {
+				height: 64px;
+				line-height: 64px;
+				color: #ffffff;
+				font-size: 16px;
+				background-color: #293137;
+			}
+			
+			.nav .nav_head .icon {
+				font-size: 18px;
+			}
+			
+			.nav .item {
+				height: 40px;
+				line-height: 40px;
+				color: #333333;
+				position: relative;
+			}
+			
+			.nav .item:hover:after {
+				content: '';
+				display: block;
+				position: absolute;
+				width: 60px;
+				height: 2px;
+				bottom: 5px;
+				left: 30px;
+				background-color: #FD463E;
+			}
+			
+			.nav .nav_list:hover {
+				height: 264px;
+				transition: height 0.3s;
+			}
+			
+			.nav .nav_list:hover+.shade {
+				display: block;
+			}
+			
+			.nav .nav_list>li.highlight:hover {
+				background-color: #ffffff;
+			}
+			
+			.nav .nav_list>li:hover .nav_head,
+			.nav .nav_list>li.active .nav_head {
+				background-color: #EA0D04;
+			}
+			
+			.nav .nav_list>li.right {
+				float: right;
+			}
+			
+			.nav .nav_list>li:hover .item {}
+			
+			#footer{
+			    width: 100%;
+			    height: 200px;
+			    border: 1px solid black;
+			    font-size: medium !important;
+			}
+			
+			#footer_middle{
+			    width: 640px; 
+			    height: 99px;
+			    border-right: 1px solid #C0C0C0;
+			    padding: 50px 50px;
+			    float: left;
+			    color: #C0C0C0;
+			}
+			
+			#footer_left{
+			    width: 440px;
+			    height: 99px;
+			    border-right: 1px solid #C0C0C0;
+			    padding: 50px 50px;
+			    float: left;
+			}
+			#footer_left ul li a:hover{
+			    border-bottom: 1px solid aquamarine;
+			}
+			
+			#footer_right{
+			    width: 290px;
+			    height: 200px;
+			    border-right: 1px solid #C0C0C0;
+			    float: left;
+			    margin-left: 90px;
+			    
+			}
+			
+			#addfoot{
+			    width: 28px;
+			    height: 200px;
+			    border:  1px solid #C0C0C0;
+			    float: left;
+			    padding: 0px 6px;
+			    color: #C0C0C0;
+			    margin-right: auto;
+			}
+	
+</style>
+<link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/font-awesome/4.6.0/css/font-awesome.min.css">
+<link href='http://fonts.useso.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+	<div id="daohang">
+			<nav class="nav">
+				<ul class="nav_list">
+					<li class="highlight active">
+						<a class="nav_head" href="index10.html">
+							<i class="icon fa fa-home"></i>
+							<span>网站首页</span>
+						</a>
+						<a href="#mian" class="item">中部</a>
+						<a href="#footer" class="item">底部</a>
+						
+						
+					</li>
+					<li>
+						<a class="nav_head" href="index10-1.html">
+							<i class="icon fa fa-cloud-download"></i>
+							<span>服务产品</span>
+						</a>
+					</li>
+					<li class="highlight">
+						<a class="nav_head" href="javascipt:;">
+							<i class="icon fa fa-diamond"></i>
+							<span>成功案例</span>
+						</a>
+						<a href="javascipt:;" class="item">案例1</a>
+						<a href="javascipt:;" class="item">案例2</a>
+						<a href="javascipt:;" class="item">案例3</a>
+						<a href="javascipt:;" class="item">案例4</a>
+					</li>
+					<li>
+						<a class="nav_head" href="index10-2.html">
+							<i class="icon fa fa-list-alt"></i>
+							<span>新闻动态</span>
+						</a>
+					</li>
+					<li class="highlight">
+						<a class="nav_head" href="javascipt:;">
+							<i class="icon fa fa-comments"></i>
+							<span>与我联系</span>
+						</a>
+						<a href="javascipt:;" class="item">&#8595<img src="img/qq.png">&#8595</a>
+						<a href="javascipt:;" class="item">2945408734</a>
+					</li>
+					<li>
+						<a class="nav_head" href="index10-3.html">
+							<i class="icon fa fa-user"></i>
+							<span>关于我们</span>
+						</a>
+					</li>
+					<li class="right highlight">
+						<a class="nav_head" href="javascipt:;">
+							<i class="icon fa fa-cog "></i>
+							<span>个人中心</span>
+						</a>
+						<a href="javascipt:;" class="item">修改资料</a>
+						<a href="javascipt:;" class="item">在线充值</a>
+						<a href="javascipt:;" class="item">升级会员</a>
+						<a href="javascipt:;" class="item">安全设置</a>
+						<a href="javascipt:;" class="item">退出帐号</a>
+					</li>
+				</ul>
+				<div class="shade"></div>
+			</nav>
+
+		</div>
+<h1 class="slider-title">汐峰智链-在线新闻动态</h1>
+
+      
+
+<section class="slider-container">
+	<ul id="slider" class="slider-wrapper">
+		<li class="slide-current">
+			<a href="http://www.cbdio.com/BigData/2018-11/01/content_5899758.htm" target="_blank"><img src="img/news1.png" alt="" width="800px" height="430px"></a>
+			<div class="caption">
+				<h3 class="caption-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;盘点全球区块链典型应用案例</h3>
+				<p><img src="img/shujuguan.jpg" width="50px" height="50px"></p>
+			</div>
+		</li>
+
+		<li>
+			<a href="https://www.wanlianzhijia.com/News/show/id/3518.html" target="_blank"><img src="img/news2.gif" alt="Slider Imagen 1"></a>
+			<div class="caption">
+				<h3 class="caption-title">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;国际红媛荟区块链大型主题活动在汉隆重举办</h3>
+				<p><img src="img/fenghui.png" width="50px" height="50px"></p>
+			</div>
+		</li>
+
+		<li>
+			<a href="https://baijiahao.baidu.com/s?id=1603142964628348218" target="_blank"><img src="img/news3.jpg" alt="Slider Imagen 1"></a>
+			<div class="caption">
+				<h3 class="caption-title">区块链赋能金融科技！</h3>
+				<p>2018 PPP全球数字资产投资峰会在京召开</p>
+			</div>
+		</li>
+
+		<li>
+			<a href="https://t.cj.sina.com.cn/articles/view/6468745996/181913b0c001009zdf" target="_blank"><img src="img/news4.jpg" alt="Slider Imagen 1"></a>
+			<div class="caption">
+				<h3 class="caption-title">升级车脑整合AI和区块链技术</h3>
+				<p>网秦的未来智慧汽车拼图逐渐完整</p>
+			</div>
+		</li>
+	</ul>
+
+	<div class="shadow"></div>
+
+	<ul id="slider-controls" class="slider-controls"></ul>
+
+</section>
+
+<script src="js/jquery.min3.js"></script>
+<script src="js/main.js"></script>
+       
+       <div id="footer">
+		    <div id="footer_left">
+		        <ul style="list-style: none;">
+		            <span style="display: block;">友情链接</span>
+		            <span style="display: block; border-top: 2px solid #C0C0C0;">&nbsp;</span>
+		            <li><a href="https://www.anlink.com/" title="安链云小哥哥" style="color: #889099;">安链云</a></li>
+		            <li><a href="https://www.huobi.co/zh-cn/" style="color: #889099;">火币全球站</a></li>
+		            <li><a href="https://www.bitbank.com/" style="color: #889099;">Bitbank</a></li>
+		            <li><a href="https://www.8btc.com/" style="color: #889099;">巴比特</a></li>
+		        </ul>
+		    </div>
+		    
+		    <div id="footer_middle">
+		         <span style="display: block;">CopyRight&#169 2018_汐峰科技有限责任公司 版权所有|违者必究</span>
+		         <span style="display: block; border-top: 2px solid #C0C0C0;">&nbsp;</span>
+		         <span style="margin-left: auto; margin-right: auto;">备案号：发生未知错误，无法显示！</span>
+		    </div>
+		    
+		    <div id="footer_right">
+		        <img src="img/footerimg.jpg" width="290px" height="200px"/>
+		    
+		    </div>
+		    
+		    <div id="addfoot">
+		        <span style="display: block;">欢</span>
+		        <span style="display: block; ">&nbsp;</span>
+		        <span style="display: block;">迎</span>
+		        <span style="display: block;">&nbsp;</span>
+		        <span style="display: block;">您</span>
+		        <span style="display: block;">的</span>
+		        <span style="display: block;">加</span>
+                <span style="display: block;">入</span>
+                <span style="display: block;">&nbsp;♡</span>
+		    </div>
+		    
+		</div>
+
+</body>
+</html>

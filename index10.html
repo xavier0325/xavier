@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>汐峰智链</title>
+		<style>
+			body {
+				background: #293137;
+				/*width: 960px;*/
+			}
+			
+			#bighead {
+				width: 100%;
+				height: 120px;
+			}
+			
+			#head {
+				width: 92%;
+				height: 119px;
+				margin: 0 auto;
+				color: white;
+			}
+			
+			.webimg {
+				width: 400px;
+				height: 119px;
+				margin: 0 auto;
+				float: left;
+			}
+			
+			.jihuashu a {
+				display: block;
+				text-decoration: none;
+				color: white;
+				direction: up;
+			}
+			
+			#headlogo3 {
+				width: 330px;
+				height: 119px;
+				float: left;
+			}
+			
+			#contain {
+				margin: 0 auto;
+				width: 210px;
+				height: 96px;
+			}
+			
+			#headlogo3 img:hover {
+				border: 2px solid cyan;
+			}
+			
+			#hezuo {
+				width: 266px;
+				height: 119px;
+				float: left;
+				color: white;
+				padding: 0px;
+			}
+			
+			#zhixie {
+				width: 70%;
+				height: 60px;
+				margin: 0 auto;
+				color: white;
+				margin-top: 50px;
+			}
+			
+			#ad {
+				width: 900px;
+				height: 300px;
+				border: 2px solid white;
+				margin: 0 auto;
+				color: white;
+				background-image: url(img/headlogo3.png);
+				background-size: 100% 100%;
+			}
+			
+			.nav {
+				background-color: #293137;
+				position: relative;
+				color: #ffffff;
+				width: 92%;
+				height: 64px;
+				margin: 0 auto;
+				border: 1px solid #c0c0c0;
+			}
+			
+			.nav a {
+				display: block;
+				text-decoration: none;
+			}
+			
+			.nav .shade {
+				position: absolute;
+				width: 100%;
+				height: 200px;
+				top: 64px;
+				left: 0;
+				z-index: 1;
+				background-color: #EEEEEE;
+				opacity: 0.9;
+				filter: alpha(opacity=90);
+				box-shadow: 0 5px 15px #CCCCCC;
+				display: none;
+				border-bottom: #ffffff solid 1px;
+				border-bottom: rgba(255, 255, 255, 0.3) solid 1px;
+			}
+			
+			.nav .nav_list {
+				position: absolute;
+				top: 0;
+				left: 50%;
+				margin: 0 0 0 -600px;
+				z-index: 2;
+				padding: 0;
+				list-style: none;
+				width: 1200px;
+				overflow: hidden;
+				height: 64px;
+			}
+			
+			.nav .nav_list>li {
+				padding: 0;
+				float: left;
+				margin: 0;
+				width: 120px;
+				text-align: center;
+				height: 264px;
+			}
+			
+			.nav .nav_head {
+				height: 64px;
+				line-height: 64px;
+				color: #ffffff;
+				font-size: 16px;
+				background-color: #293137;
+			}
+			
+			.nav .nav_head .icon {
+				font-size: 18px;
+			}
+			
+			.nav .item {
+				height: 40px;
+				line-height: 40px;
+				color: #333333;
+				position: relative;
+			}
+			
+			.nav .item:hover:after {
+				content: '';
+				display: block;
+				position: absolute;
+				width: 60px;
+				height: 2px;
+				bottom: 5px;
+				left: 30px;
+				background-color: #FD463E;
+			}
+			
+			.nav .nav_list:hover {
+				height: 264px;
+				transition: height 0.3s;
+			}
+			
+			.nav .nav_list:hover+.shade {
+				display: block;
+			}
+			
+			.nav .nav_list>li.highlight:hover {
+				background-color: #ffffff;
+			}
+			
+			.nav .nav_list>li:hover .nav_head,
+			.nav .nav_list>li.active .nav_head {
+				background-color: #EA0D04;
+			}
+			
+			.nav .nav_list>li.right {
+				float: right;
+			}
+			
+			.nav .nav_list>li:hover .item {}
+			
+			#footer{
+			    width: 100%;
+			    height: 200px;
+			    border: 1px solid black;
+			    
+			}
+			
+			#footer_middle{
+			    width: 640px; 
+			    height: 99px;
+			    border-right: 1px solid #C0C0C0;
+			    padding: 50px 50px;
+			    float: left;
+			}
+			
+			#footer_left{
+			    width: 280px;
+			    height: 99px;
+			    border-right: 1px solid #C0C0C0;
+			    padding: 50px 50px;
+			    float: left;
+			}
+			#footer_left ul li a:hover{
+			    border-bottom: 1px solid aquamarine;
+			}
+			
+			#footer_right{
+			    width: 290px;
+			    height: 200px;
+			    border-right: 1px solid #C0C0C0;
+			    float: left;
+			    margin-left: 60px;
+			}
+			
+			#addfoot{
+			    width: 28px;
+			    height: 200px;
+			    border:  1px solid #C0C0C0;
+			    float: left;
+			    padding: 0px 6px;
+			
+			}
+			
+		</style>
+		<link rel="stylesheet" type="text/css" href="http://cdn.bootcss.com/font-awesome/4.6.0/css/font-awesome.min.css">
+		<link type="text/css" rel="stylesheet" href="css/index_826609a.css">
+	</head>
+
+	<body>
+		<div id="bighead">
+			<div id="head">
+				<div class="webimg">
+					<img src="img/headlogo.jpg" width="400px" height="119px">
+				</div>
+				<div class="webimg">
+					<img src="img/headlogo2.jpg" width="400px" height="119px">
+				</div>
+				<div id="hezuo">
+					<h2 align="center">项目创业计划书：</h2>
+				</div>
+				<div id="headlogo3">
+					<div id="contain">
+						<a href="index9-1.html">
+							<img src="img/jihuashu.jpg" width: 210px; height="95px" style="border-radius: 20px;" />
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="daohang">
+			<nav class="nav">
+				<ul class="nav_list">
+					<li class="highlight active">
+						<a class="nav_head" href="index10.html">
+							<i class="icon fa fa-home"></i>
+							<span>网站首页</span>
+						</a>
+						<a href="#mian" class="item">中部</a>
+						<a href="#footer" class="item">底部</a>
+						
+						
+					</li>
+					<li>
+						<a class="nav_head" href="index10-1.html">
+							<i class="icon fa fa-cloud-download"></i>
+							<span>服务产品</span>
+						</a>
+					</li>
+					<li class="highlight">
+						<a class="nav_head" href="javascipt:;">
+							<i class="icon fa fa-diamond"></i>
+							<span>成功案例</span>
+						</a>
+						<a href="javascipt:;" class="item">案例1</a>
+						<a href="javascipt:;" class="item">案例2</a>
+						<a href="javascipt:;" class="item">案例3</a>
+						<a href="javascipt:;" class="item">案例4</a>
+					</li>
+					<li>
+						<a class="nav_head" href="index10-2.html">
+							<i class="icon fa fa-list-alt"></i>
+							<span>新闻动态</span>
+						</a>
+					</li>
+					<li class="highlight">
+						<a class="nav_head" href="javascipt:;">
+							<i class="icon fa fa-comments"></i>
+							<span>与我联系</span>
+						</a>
+						<a href="javascipt:;" class="item">&#8595<img src="img/qq.png">&#8595</a>
+						<a href="javascipt:;" class="item">2945408734</a>
+					</li>
+					<li>
+						<a class="nav_head" href="index10-3.html">
+							<i class="icon fa fa-user"></i>
+							<span>关于我们</span>
+						</a>
+					</li>
+					<li class="right highlight">
+						<a class="nav_head" href="javascipt:;">
+							<i class="icon fa fa-cog "></i>
+							<span>个人中心</span>
+						</a>
+						<a href="javascipt:;" class="item">修改资料</a>
+						<a href="javascipt:;" class="item">在线充值</a>
+						<a href="javascipt:;" class="item">升级会员</a>
+						<a href="javascipt:;" class="item">安全设置</a>
+						<a href="javascipt:;" class="item">退出帐号</a>
+					</li>
+				</ul>
+				<div class="shade"></div>
+			</nav>
+
+		</div>
+
+		<div id="mian">
+            <div class="head-wrap">
+			<div class="head-box" data-img="img/test1.png">
+				<a href="" class="header" target="_blank" hidefocus=true>
+					<div class="h-title left ">
+						<h2>AI云保险</h2>
+						<h3>启创新模式</h3>
+						<p>针对保险行业全流程场景，汐峰智链结合保险业多年行业经验，提供一站式服务，帮助客户实现从平台上云，核心系统搭建， 客户运营到核保核赔等全产品解决方案，为传统保险赋能，重塑保险新模式。</p>
+						<i></i>
+					</div>
+				</a>
+			</div>
+			<div class="head-box" data-img="img/test3.jpg">
+				<a href="" class="header" target="_blank" hidefocus=true>
+					<div class="h-title left ">
+						<h2 class="afteradd">全球式智联</h2>
+						<h3 class="afteradd">全球数据一站式管理</h3>
+						<p style="color: white; border: 2px solid #c0c0c0; border-radius: 8px;">AI区块链整合投资者所需相关信息数据，实时了解业内行情，连结企业，政府，消费者群体，监管介入系统完善。</p>
+						<i></i>
+					</div>
+				</a>
+			</div>
+			<div class="head-box" data-img="img/test4.png">
+				<a href="#" class="header" target="_blank" hidefocus=true>
+					<div class="h-title left ">
+						<h2 class="afteradd">区块链技术"江湖"</h2>
+						<h3 class="afteradd">摩擦出闪耀的火花</h3>
+						<p style="color: white; border: 2px solid #c0c0c0; border-radius: 8px;">致力于AI区块链云端，大数据统筹，深入技术层</p>
+						<i></i>
+					</div>
+				</a>
+			</div>
+			<div class="head-box" data-img="img/test5.png">
+				<a href="https://baijiahao.baidu.com/s?id=1577032742000585602" class="header" target="_blank" hidefocus=true>
+					<div class="h-title left ">
+						<h2 class="afteradd">金融投资</h2>
+						<h3 class="afteradd">AI区块链简单操作</h3>
+						<p style="color: white; border: 2px solid #c0c0c0; border-radius: 8px;">智能管家般的数字货币交易，防篡改级信用来源，金融行情一目了然</p>
+						<i></i>
+					</div>
+				</a>
+			</div>
+			
+
+			<div class="head-ctrl-box">
+				<p class="head-ctrl"></p>
+			</div>
+			<a href="javascript:;" class="head-prev head-sel">
+				<i></i>
+				<div class="prev-box sel-box"></div>
+			</a>
+			<a href="javascript:;" class="head-next head-sel">
+				<i></i>
+				<div class="next-box sel-box"></div>
+			</a>
+		</div>
+		</div>
+
+		<script charset="UTF-8" src="js/jquery(mixNIE).last.js"></script>
+		<script charset="UTF-8" type="text/javascript" src="js/globalnews.js"></script>
+		<script type="text/javascript" charset="gb2312" src="js/auto_combine_f3abf_f67da95.js"></script>
+        
+		
+
+		<div id="zhixie">
+
+			<h2 align="center">特别致谢以下传媒合作伙伴！</h2>
+		</div>
+
+		<div id="ad">
+
+			<!--<h1 align="center">假的广告位</h1>-->
+
+		</div>
+		
+		<div id="footer">
+		    <div id="footer_left">
+		        <ul style="list-style: none;">
+		            <span style="display: block;">友情链接</span>
+		            <span style="display: block; border-top: 2px solid #C0C0C0;">&nbsp;</span>
+		            <li><a href="https://www.anlink.com/" title="安链云小哥哥" style="color: #889099;">安链云</a></li>
+		            <li><a href="https://www.huobi.co/zh-cn/" style="color: #889099;">火币全球站</a></li>
+		            <li><a href="https://www.bitbank.com/" style="color: #889099;">Bitbank</a></li>
+		            <li><a href="https://www.8btc.com/" style="color: #889099;">巴比特</a></li>
+		        </ul>
+		    </div>
+		    
+		    <div id="footer_middle">
+		         <span style="display: block;">CopyRight&#169 2018_汐峰科技有限责任公司 版权所有|违者必究</span>
+		         <span style="display: block; border-top: 2px solid #C0C0C0;">&nbsp;</span>
+		         <span style="margin-left: auto; margin-right: auto;">备案号：发生未知错误，无法显示！</span>
+		    </div>
+		    
+		    <div id="footer_right">
+		        <img src="img/footerimg.jpg" width="290px" height="200px"/>
+		    
+		    </div>
+		    
+		    <div id="addfoot">
+		        <span style="display: block;">欢</span>
+		        <span style="display: block; ">&nbsp;</span>
+		        <span style="display: block;">迎</span>
+		        <span style="display: block;">&nbsp;</span>
+		        <span style="display: block;">您</span>
+		        <span style="display: block;">的</span>
+		        <span style="display: block;">加</span>
+                <span style="display: block;">入</span>
+                <span style="display: block;">&nbsp;♡</span>
+		    </div>
+		    
+		</div>
+
+	</body>
+
+</html>
