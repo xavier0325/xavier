@@ -1,0 +1,2046 @@
+@charset "gb2312";
+html,
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+p,
+blockquote,
+pre,
+hr,
+figure,
+table,
+caption,
+th,
+td,
+form,
+fieldset,
+legend,
+input,
+button,
+textarea,
+menu {
+	margin: 0;
+	padding: 0;
+	font-family: "΢���ź�"
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	background: 
+}
+
+html,
+body,
+fieldset,
+img,
+iframe,
+abbr {
+	border: 0
+}
+
+li {
+	list-style: none
+}
+
+textarea {
+	overflow: auto;
+	resize: none
+}
+
+a,
+button {
+	cursor: pointer
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+em,
+strong,
+b {
+	font-weight: 700
+}
+
+a,
+a:hover {
+	text-decoration: none;
+	outline: 0;
+	-moz-outline: 0
+}
+
+body,
+textarea,
+input,
+button {
+	color: #62a1c9
+}
+
+html,
+body {
+	width: 100%;
+	min-height: 930px;
+	height: auto
+}
+
+.hide {
+	display: none
+}
+
+.f-cb:after,
+.f-cbli li:after {
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+	overflow: hidden;
+	content: "."
+}
+
+.f-cb,
+.f-cbli li {
+	zoom: 1
+}
+
+.f-ib {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1
+}
+
+.f-dn {
+	display: none
+}
+
+.f-db {
+	display: block
+}
+
+.f-fl {
+	float: left
+}
+
+.f-fr {
+	float: right
+}
+
+.f-pr {
+	position: relative
+}
+
+.f-pa {
+	position: absolute
+}
+
+.f-prz {
+	position: relative;
+	zoom: 1
+}
+
+.f-oh {
+	overflow: hidden
+}
+
+.f-turn {
+	-webkit-transition: all .3s ease-in;
+	-moz-transition: all .3s ease-in;
+	-ms-transition: all .3s ease-in;
+	-o-transition: all .3s ease-in;
+	transition: all .3s ease-in
+}
+
+.wrap {
+	position: relative;
+	width: 100%;
+	min-width: 1260px;
+	max-width: 1720px;
+	margin: 0 auto
+}
+
+.wrap .topBar {
+	position: absolute
+}
+
+.head-wrap {
+	position: relative;
+	width: 92%;
+	height: 600px;
+	overflow: hidden;
+	margin: 0 auto;
+	margin-top: 200px;
+}
+
+.head-box {
+	position: absolute;
+	width: 100%;
+	padding-top: 100px;
+	height: 600px;
+	top: 0;
+	left: 0;
+	background-position: center top;
+	display: none;
+	z-index: 1
+}
+
+.head-box.cur {
+	z-index: 2;
+	display: block
+}
+
+.head-ctrl-box {
+	position: absolute;
+	width: 1260px;
+	height: 0;
+	left: 50%;
+	margin-left: -630px;
+	bottom: 180px;
+	z-index: 3
+}
+
+.head-ctrl {
+	position: relative;
+	width: 200px;
+	float: right;
+	height: 40px;
+	text-align: center
+}
+
+.head-ctrl a {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	margin: 0 5px;
+	background-repeat: no-repeat;
+}
+
+.head-ctrl a:hover,
+.head-ctrl a.cur {
+	background-repeat: no-repeat;
+}
+
+.head-sel {
+	position: absolute;
+	top: 50%;
+	background: #cf0f32;
+	width: 45px;
+	height: 80px;
+	z-index: 5
+}
+
+.head-sel i {
+	position: absolute;
+	width: 8px;
+	height: 13px;
+	left: 50%;
+	top: 50%;
+	margin-left: -4px;
+	margin-top: -7px
+}
+
+.head-sel:hover {
+	background: #3c3d3f
+}
+
+.head-sel:hover .sel-box {
+	display: block
+}
+
+.head-prev {
+	left: 0
+}
+
+.head-prev i {
+	background: url(http://res.nie.netease.com/nie/gw/15v1/img/prev_i_ccc3ed0.png) no-repeat
+}
+
+.head-next {
+	right: 0
+}
+
+.head-next i {
+	background: url(http://res.nie.netease.com/nie/gw/15v1/img/next_i_d27c8a6.png) no-repeat
+}
+
+.sel-box {
+	position: absolute;
+	top: 0;
+	left: -231px;
+	width: 210px;
+	height: 60px;
+	padding: 10px;
+	background: #3c3d3f;
+	display: none;
+	overflow: hidden
+}
+
+.sel-box img {
+	position: relative;
+	float: left;
+	margin-right: 10px;
+	width: 60px;
+	height: 60px
+}
+
+.sel-box h2 {
+	color: #fff;
+	font-size: 22px;
+	line-height: 32px;
+	height: 32px;
+	overflow: hidden
+}
+
+.sel-box p {
+	color: #fff;
+	font-size: 16px;
+	line-height: 28px;
+	height: 28px;
+	overflow: hidden
+}
+
+.prev-box {
+	left: 45px;
+	border-left: #767878 1px solid
+}
+
+.next-box {
+	left: -231px;
+	border-right: #767878 1px solid
+}
+
+.header {
+	position: relative;
+	width: 1260px;
+	margin: 0 auto;
+	height: 100%;
+	display: block
+}
+
+.header .h-title {
+	position: absolute;
+	width: 490px;
+	top: 205px
+}
+
+.header .h-title h2 {
+	font-size: 44px;
+	line-height: 44px;
+	margin-bottom: 20px;
+	color: #272a2c
+}
+
+.header .h-title h3 {
+	font-size: 44px;
+	line-height: 44px;
+	color: #272a2c;
+	padding-bottom: 20px;
+	border-bottom: 1px #cf1132 solid;
+	margin-bottom: 10px
+}
+
+.header .h-title p {
+	margin: 10px 0 30px;
+	font-size: 16px;
+	color: #272a2c;
+	line-height: 30px
+}
+
+.header .h-title i {
+	width: 140px;
+	height: 50px;
+	display: block;
+	background: url(http://res.nie.netease.com/nie/gw/15v1/img/btn_be7fb80.png) no-repeat
+}
+
+.header .white h2 {
+	color: #fff
+}
+
+.header .white h3 {
+	color: #fff
+}
+
+.header .white p {
+	color: #fff
+}
+
+.header .left {
+	left: 40px
+}
+
+.header .left h2 {
+	text-align: left
+}
+
+.header .left h3 {
+	text-align: left
+}
+
+.header .left p {
+	text-align: left
+}
+
+.header .center {
+	left: 50%;
+	margin-left: -245px;
+	top: 100px
+}
+
+.header .center h2 {
+	text-align: center
+}
+
+.header .center h3 {
+	text-align: left
+}
+
+.header .center i {
+	margin: 0 auto
+}
+
+.header .center p {
+	text-align: center
+}
+
+.header .right {
+	right: 40px
+}
+
+.nav-wrap {
+	width: 100%;
+	height: 70px;
+	background: url(../img/nav_bg.jpg) no-repeat;
+	background-position: center top
+}
+
+.nav-box {
+	position: relative;
+	width: 1260px;
+	margin: 0 auto;
+	height: 100%
+}
+
+.nav-box a {
+	line-height: 70px;
+	color: #a3c8dc;
+	font-size: 16px;
+	position: relative;
+	margin: 0 20px
+}
+
+.nav-box a i {
+	position: absolute;
+	left: -20px;
+	top: 4px;
+	width: 15px;
+	height: 15px;
+	background: url(../img/bli3.png) no-repeat
+}
+
+.nav-box a:hover,
+.nav-box a.sel {
+	color: #fff
+}
+
+.nav-box a:hover i,
+.nav-box a.sel i {
+	background: url(../img/bli4.png) no-repeat
+}
+
+.ser-box {
+	position: relative;
+	float: right;
+	height: 30px;
+	width: 400px;
+	padding: 20px 0;
+	right: 20px
+}
+
+.ser-box input {
+	width: 320px;
+	background: #47748c;
+	border: 0;
+	height: 14px;
+	line-height: 14px;
+	padding: 8px;
+	font-size: 14px;
+	color: #a3c8dc
+}
+
+.ser-box a {
+	position: absolute;
+	width: 25px;
+	height: 25px;
+	background: url(../img/ser_bg.png) no-repeat
+}
+
+.afteradd{
+    color: white !important;
+}
+
+#NIE-copyRight {
+	padding: 20px 0;
+	background: #272a2c;
+	min-width: 1260px;
+	color: #fff
+}
+
+#NIE-copyRight a {
+	color: #fff
+}
+
+#NIE-copyRight a:hover {
+	text-decoration: underline
+}
+
+#NIE-copyRight #ncp-l1 {
+	color: #e23a3f
+}
+
+#NIE-copyRight #ncp-l1 a {
+	color: #e23a3f
+}
+
+#NIE-topBar-include {
+	min-width: 1260px!important
+}
+
+.con-wrap {
+	width: 100%
+}
+
+.con-wrap .con-box {
+	position: relative;
+	width: 1260px;
+	margin: 0 auto;
+	height: 100%;
+	overflow: hidden
+}
+
+.con-wrap1 {
+	height: 200px;
+	background: url(http://res.nie.netease.com/nie/gw/15v1/img/con1_bg_17b89a1.jpg) no-repeat;
+	background-position: center top
+}
+
+.con-wrap1 .con-box {
+	top: -120px;
+	height: 320px;
+	z-index: 3
+}
+
+.g-banBox {
+	position: absolute;
+	width: 790px;
+	height: 100%;
+	overflow: hidden;
+	left: 0
+}
+
+.g-banBox .ctrl-box {
+	position: relative;
+	width: 150px;
+	float: left;
+	height: 100%;
+	background: #282b2d
+}
+
+.g-banBox .ctrl-box .ctrl-mon {
+	font-size: 12px;
+	color: #727272;
+	text-align: center;
+	margin-top: 70px
+}
+
+.g-banBox .ctrl-box .ctrl-mon-mun {
+	font-size: 58px;
+	line-height: 60px;
+	color: #727272;
+	text-align: center
+}
+
+.g-banBox .ctrl-box i {
+	width: 22px;
+	height: 5px;
+	background: #cf1132;
+	display: block;
+	margin: 15px auto
+}
+
+.g-banBox .ctrl-box .ctrl-title {
+	font-size: 16px;
+	color: #fff;
+	font-weight: 700;
+	text-align: center
+}
+
+.g-banBox .ctrl {
+	position: absolute;
+	width: 100%;
+	bottom: 10px;
+	height: 30px;
+	text-align: center
+}
+
+.g-banBox .ctrl a {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	margin: 0 5px;
+	background-repeat: no-repeat;
+}
+
+.g-banBox .ctrl a:hover,
+.g-banBox .ctrl a.cur {
+	background-repeat: no-repeat;
+}
+
+.carouselwrap {
+	position: relative;
+	width: 640px;
+	height: 100%;
+	float: left;
+	overflow: hidden
+}
+
+.carouselwrap .carouse-box {
+	position: absolute;
+	left: -100%;
+	top: 0;
+	width: 100%;
+	height: 100%
+}
+
+.carouselwrap .carouse-box i {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 360px;
+	height: 310px;
+	pointer-events: none
+}
+
+.carouselwrap .carouse-box .carouse-con {
+	position: relative;
+	float: left;
+	width: 50%;
+	height: 100%;
+	background: #e2e6e9;
+	display: block
+}
+
+.carouselwrap .carouse-box .carouse-con:hover .bg-font {
+	bottom: 0
+}
+
+.carouselwrap .carouse-box .carouse-con:hover .bg-font-top {
+	top: 0
+}
+
+.carouselwrap .carouse-box .carouse-con:hover .car-bg-img {
+	background-position: 60% 50%;
+	background-position: 40% 50%\9;
+	*background-position: 40% 50%
+}
+
+.carouselwrap .carouse-box .carouse-con:hover p {
+	background: 0 0;
+	-webkit-transition: all .3s linear;
+	-moz-transition: all .3s linear;
+	-ms-transition: all .3s linear;
+	-o-transition: all .3s linear;
+	transition: all .3s linear
+}
+
+.carouselwrap .carouse-box .carouse-con:hover .txt1 {
+	top: -40px
+}
+
+.carouselwrap .carouse-box .carouse-con:hover .txt2,
+.carouselwrap .carouse-box .carouse-con:hover .dayslef {
+	top: 25%;
+	color: #fff
+}
+
+.carouselwrap .carouse-box .carouse-con:hover .jk_btn {
+	background: 0 0;
+	background: rgba(0, 0, 0, 0)
+}
+
+.carouselwrap .carouse-box .carouse-con:hover .dayslef span {
+	color: #fff
+}
+
+.carouselwrap .carouse-box .jk_btn {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	background: url(http://res.nie.netease.com/nie/gw/15v1/img/cover_fe1849f.png) repeat;
+	background: rgba(0, 0, 0, .5);
+	display: block;
+	color: #c6c6c6;
+	-webkit-transition: all .3s linear;
+	-moz-transition: all .3s linear;
+	-ms-transition: all .3s linear;
+	-o-transition: all .3s linear;
+	transition: all .3s linear
+}
+
+.carouselwrap .carouse-box .car-bg-img {
+	width: 100%;
+	height: 100%;
+	background-position: 40% 50%;
+	-webkit-transition: all .3s linear;
+	-moz-transition: all .3s linear;
+	-ms-transition: all .3s linear;
+	-o-transition: all .3s linear;
+	transition: all .3s linear
+}
+
+.carouselwrap .carouse-box img {
+	width: 100%;
+	height: 100%
+}
+
+.carouselwrap .carouse-box .txt1 {
+	position: relative;
+	top: 0;
+	font-size: 20px;
+	line-height: 50px;
+	font-weight: 700;
+	text-align: center;
+	padding-top: 60px;
+	padding-bottom: 30px;
+	display: block;
+	color: #fff;
+	-webkit-transition: all .3s linear;
+	-moz-transition: all .3s linear;
+	-ms-transition: all .3s linear;
+	-o-transition: all .3s linear;
+	transition: all .3s linear
+}
+
+.carouselwrap .carouse-box .txt2,
+.carouselwrap .carouse-box .dayslef {
+	position: relative;
+	font-size: 14px;
+	line-height: 28px;
+	text-align: center;
+	width: 160px;
+	margin: 0 auto;
+	display: block;
+	top: 0;
+	-webkit-transition: all .3s linear;
+	-moz-transition: all .3s linear;
+	-ms-transition: all .3s linear;
+	-o-transition: all .3s linear;
+	transition: all .3s linear
+}
+
+.carouselwrap .carouse-box .dayslef {
+	display: none
+}
+
+.carouselwrap .carouse-box .dayslef span {
+	font-size: 28px;
+	color: #cf1132;
+	font-weight: 700;
+	-webkit-transition: all .3s linear;
+	-moz-transition: all .3s linear;
+	-ms-transition: all .3s linear;
+	-o-transition: all .3s linear;
+	transition: all .3s linear
+}
+
+.carouselwrap .carouse-box p {
+	position: absolute;
+	height: 60px;
+	width: 100%;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+	opacity: .8;
+	filter: alpha(opacity=80)
+}
+
+.carouselwrap .carouse-box .like {
+	position: relative;
+	height: 60px;
+	line-height: 60px;
+	display: inline-block
+}
+
+.carouselwrap .carouse-box .like a {
+	height: 30px;
+	line-height: 30px;
+	background: url(http://res.nie.netease.com/nie/gw/15v1/img/like3_53586ef.png) no-repeat;
+	padding-left: 30px;
+	color: #fff;
+	*margin-top: 13px;
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: all .4s linear 0s;
+	-moz-transition: all .4s linear 0s;
+	-ms-transition: all .4s linear 0s;
+	-o-transition: all .4s linear 0s;
+	transition: all .4s linear 0s
+}
+
+.carouselwrap .carouse-box .like a:hover {
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+	-ms-transform: scale(1.2);
+	-o-transform: scale(1.2);
+	transform: scale(1.2)
+}
+
+.carouselwrap .carouse-box .bg-font {
+	position: absolute;
+	left: 0;
+	bottom: -120px;
+	width: 100%;
+	height: 120px;
+	background: #cf1132;
+	opacity: .9;
+	filter: alpha(opacity=90)
+}
+
+.carouselwrap .carouse-box .bg-font-top {
+	position: absolute;
+	left: 0;
+	top: -60px;
+	width: 100%;
+	height: 60px;
+	background: url(http://res.nie.netease.com/nie/gw/15v1/img/bg_font_top_ec5611f.png) repeat-x
+}
+
+.g-listBox {
+	position: absolute;
+	width: 390px;
+	height: 280px;
+	padding: 40px 40px 0;
+	background: #282b2d;
+	overflow: hidden;
+	right: 0
+}
+
+.g-listBox .g-newsBox {
+	width: 100%;
+	height: 100%;
+	overflow: hidden
+}
+
+.g-listBox .newsBox {
+	position: relative;
+	width: 100%;
+	padding-top: 14px
+}
+
+.g-listBox .hot-news {
+	font-size: 24px;
+	color: #cf0f32;
+	padding-bottom: 14px;
+	border-bottom: 1px #3d4041 solid;
+	display: block;
+	font-weight: 700
+}
+
+.g-listBox .hot-news:hover {
+	color: #e41f43
+}
+
+.g-listBox .morenews {
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 37px;
+	height: 37px;
+	background-repeat: no-repeat;
+}
+
+.newsBoxlist {
+	position: relative;
+	width: 100%;
+	height: 100%
+}
+
+.newsBoxlist li {
+	height: 30px;
+	line-height: 30px;
+	*height: 24px;
+	*line-height: 24px
+}
+
+.newsBoxlist a {
+	width: 350px;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+	color: #c3c3c3;
+	float: left;
+	font-size: 14px;
+	text-indent: 15px;
+	background: url(http://res.nie.netease.com/nie/gw/15v1/img/n-icon_c141505.png) 0 center no-repeat
+}
+
+.newsBoxlist a:hover {
+	font-weight: 700;
+	color: #fff
+}
+
+.newsBoxlist span {
+	float: right;
+	font-size: 14px;
+	color: #727272
+}
+
+.con-wrap-in {
+	position: relative;
+	background: #fff;
+	padding-bottom: 50px
+}
+
+.con-wrap-in .con-box {
+	height: 565px;
+	padding: 7px 0;
+	overflow: hidden
+}
+
+.con-wrap-in .con-box .con-box-title {
+	position: relative;
+	line-height: 22px;
+	font-size: 22px;
+	color: #272a2c;
+	display: block;
+	text-indent: 15px;
+	border-left: 4px #cf1132 solid;
+	margin: 30px 0 15px
+}
+
+.con-wrap-in .con-box a {
+	width: 238px;
+	height: 238px;
+	padding: 7px;
+	float: left
+}
+
+.con-wrap2,
+.con-wrap5 {
+	background-color: #f1f1f1
+}
+
+.con-wrap2 .con-box,
+.con-wrap5 .con-box {
+	height: 400px
+}
+
+.g-hotBox {
+	padding: 50px 0
+}
+
+.g-hotBox .con-box-title {
+	position: relative;
+	line-height: 22px;
+	font-size: 22px;
+	color: #272a2c;
+	display: block;
+	text-indent: 15px;
+	border-left: 4px #cf1132 solid;
+	margin-bottom: 30px
+}
+
+.g-hotBox .reload {
+	position: absolute;
+	top: 0;
+	right: 20px;
+	font-size: 16px;
+	color: #272a2c;
+	height: 20px;
+	line-height: 20px;
+	display: block
+}
+
+.g-hotBox .reload i {
+	display: inline-block;
+	width: 21px;
+	height: 17px;
+	margin-left: 10px;
+	-webkit-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+	transform: rotate(360deg);
+	-webkit-transition: all .4s linear 0s;
+	-moz-transition: all .4s linear 0s;
+	-ms-transition: all .4s linear 0s;
+	-o-transition: all .4s linear 0s;
+	transition: all .4s linear 0s;
+	*top: -4px;
+	background-repeat: no-repeat;
+}
+
+.g-hotBox .reload:hover i {
+	-webkit-transform: rotate(360deg);
+	-moz-transform: rotate(360deg);
+	-ms-transform: rotate(360deg);
+	-o-transform: rotate(360deg);
+	transform: rotate(360deg)
+}
+
+.g-hotBox .o-link {
+	font-size: 16px;
+	margin: 0 5px;
+	color: #272a2c
+}
+
+.g-hotBox .o-link:hover,
+.g-hotBox .o-link.active {
+	color: #cf1132
+}
+
+.g-hotBox .f-link {
+	margin-left: 30px
+}
+
+.g-hot-all {
+	position: relative;
+	width: 100%;
+	height: 325px
+}
+
+.g-hot-wrap {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	display: none
+}
+
+.g-hot-wrap.active {
+	display: block
+}
+
+.cur-hot-box {
+	position: absolute;
+	width: 1300px;
+	height: 325px;
+	left: 0;
+	top: 0;
+	overflow: visible;
+	display: none;
+	z-index: 4
+}
+
+.cur-hot-box .hot-box {
+	float: left;
+	width: 400px;
+	height: 315px;
+	margin: 0 30px 0 0;
+	background: #fffdfe;
+	position: relative;
+	border-bottom: 5px #ebebeb solid;
+	-webkit-transform-origin: center center;
+	-moz-transform-origin: center center;
+	-ms-transform-origin: center center;
+	-o-transform-origin: center center;
+	transform-origin: center center;
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-ms-transform: scale(0);
+	-o-transform: scale(0);
+	transform: scale(0);
+	opacity: 0;
+	filter: alpha(opacity=0)
+}
+
+.cur-hot-box.cur {
+	z-index: 5
+}
+
+.cur-hot-box.cur .hot-box {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+	opacity: 1;
+	filter: alpha(opacity=100)
+}
+
+.cur-hot-box.hideing .hot-box {
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-ms-transform: scale(0);
+	-o-transform: scale(0);
+	transform: scale(0);
+	opacity: 0;
+	filter: alpha(opacity=0)
+}
+
+.cur-hot-box.hideing .hot-box:nth-child(1) {
+	-webkit-transition: all .4s linear 0s;
+	-moz-transition: all .4s linear 0s;
+	-ms-transition: all .4s linear 0s;
+	-o-transition: all .4s linear 0s;
+	transition: all .4s linear 0s
+}
+
+.cur-hot-box.hideing .hot-box:nth-child(2) {
+	-webkit-transition: all .4s linear .1s;
+	-moz-transition: all .4s linear .1s;
+	-ms-transition: all .4s linear .1s;
+	-o-transition: all .4s linear .1s;
+	transition: all .4s linear .1s
+}
+
+.cur-hot-box.hideing .hot-box:nth-child(3) {
+	-webkit-transition: all .4s linear .2s;
+	-moz-transition: all .4s linear .2s;
+	-ms-transition: all .4s linear .2s;
+	-o-transition: all .4s linear .2s;
+	transition: all .4s linear .2s
+}
+
+.cur-hot-box.showing .hot-box {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+	opacity: 1;
+	filter: alpha(opacity=100)
+}
+
+.cur-hot-box.showing .hot-box:nth-child(1) {
+	-webkit-transition: all .4s linear .4s;
+	-moz-transition: all .4s linear .4s;
+	-ms-transition: all .4s linear .4s;
+	-o-transition: all .4s linear .4s;
+	transition: all .4s linear .4s
+}
+
+.cur-hot-box.showing .hot-box:nth-child(2) {
+	-webkit-transition: all .4s linear .5s;
+	-moz-transition: all .4s linear .5s;
+	-ms-transition: all .4s linear .5s;
+	-o-transition: all .4s linear .5s;
+	transition: all .4s linear .5s
+}
+
+.cur-hot-box.showing .hot-box:nth-child(3) {
+	-webkit-transition: all .4s linear .6s;
+	-moz-transition: all .4s linear .6s;
+	-ms-transition: all .4s linear .6s;
+	-o-transition: all .4s linear .6s;
+	transition: all .4s linear .6s
+}
+
+.hot-bg-img {
+	width: 400px;
+	height: 176px
+}
+
+.hot-link {
+	display: block;
+	width: 400px;
+	height: 176px;
+	position: relative;
+	overflow: hidden
+}
+
+.hot-link:hover .hot-font {
+	opacity: 1;
+	filter: alpha(opacity=100);
+	top: 0
+}
+
+.hot-link .hot-font {
+	position: absolute;
+	width: 400px;
+	height: 176px;
+	top: -100%;
+	left: 0;
+	opacity: 0;
+	filter: alpha(opacity=0)
+}
+
+.hot-link .hot-font .bg {
+	background: #cf1132;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 400px;
+	height: 176px;
+	opacity: .85
+}
+
+.hot-link .hot-font .con {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 39px 30px;
+	overflow: hidden
+}
+
+.hot-link .hot-font .font-qr {
+	float: left;
+	margin: 0 28px 0 0;
+	width: 100px;
+	height: 100px
+}
+
+.hot-link .hot-font .txt {
+	float: left;
+	width: 172px;
+	height: 99px;
+	overflow: hidden
+}
+
+.hot-link .hot-font .txt p {
+	height: 28px;
+	color: #fff;
+	font: 14px/28px "Microsoft YaHei";
+	overflow: hidden
+}
+
+.hot-link .hot-font .txt .down-num {
+	padding: 0 0 0 15px;
+	background: url(http://res.nie.netease.com/nie/gw/15v1/img/hot-down-icon_66eddd9.png) no-repeat 0 8px
+}
+
+.hot-link .hot-font .score {
+	position: relative
+}
+
+.hot-link .hot-font .score span {
+	position: absolute;
+	display: block;
+	width: 90px;
+	height: 20px;
+	top: 3px;
+	left: 68px;
+	background: url(http://res.nie.netease.com/nie/gw/15v1/img/score_8dbd1b9.png) repeat-x 0 0
+}
+
+.hot-link .hot-font .score em {
+	position: absolute;
+	display: block;
+	height: 100%;
+	z-index: 2;
+	width: 0;
+	left: 0;
+	top: 0;
+	background: url(http://res.nie.netease.com/nie/gw/15v1/img/score2_e281cef.png) repeat-x 0 0
+}
+
+.hot-link .hot-font .score em.satr_1 {
+	width: 20%
+}
+
+.hot-link .hot-font .score em.satr_2 {
+	width: 40%
+}
+
+.hot-link .hot-font .score em.satr_3 {
+	width: 60%
+}
+
+.hot-link .hot-font .score em.satr_4 {
+	width: 80%
+}
+
+.hot-link .hot-font .score em.satr_5 {
+	width: 100%
+}
+
+.hot-title {
+	color: #383838;
+	font: 700 20px/32px "Microsoft YaHei";
+	margin: 18px 0 0 20px;
+	height: 32px;
+	overflow: hidden
+}
+
+.hot-txt {
+	margin: 0 0 0 30px;
+	font: 14px "Microsoft YaHei";
+	color: #9f9f9f
+}
+
+.hot-like {
+	position: absolute;
+	bottom: 20px;
+	right: 127px
+}
+
+.hot-like a {
+	color: #9f9f9f;
+	font-size: 12px;
+	height: 30px;
+	line-height: 30px;
+	background: url(http://res.nie.netease.com/nie/gw/15v1/img/like_fe71b2c.png) no-repeat;
+	background-position: 0 0
+}
+
+.hot-like a:hover {
+	background-position: 0 -30px
+}
+
+.gw-link {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+	width: 88px;
+	height: 30px;
+	display: block;
+	background: url(http://res.nie.netease.com/nie/gw/15v1/img/btn1_c7dd2d3.png) no-repeat 0 0;
+	background-position: 0 -30px;
+	font: 12px/30px "Micosoft YaHei";
+	text-align: center;
+	color: #9f9f9f
+}
+
+.gw-link:hover {
+	color: #fff;
+	text-decoration: none;
+	background-position: 0 0;
+	-webkit-transition: all .2s ease-out;
+	-moz-transition: all .2s ease-out;
+	-ms-transition: all .2s ease-out;
+	-o-transition: all .2s ease-out;
+	transition: all .2s ease-out;
+	-webkit-animation: ani-gw-link .3s linear .2s 1 normal 300ms 0 ease;
+	-moz-animation: ani-gw-link .3s linear .2s 1 normal 300ms 0 ease;
+	-ms-animation: ani-gw-link .3s linear .2s 1 normal 300ms 0 ease;
+	-o-animation: ani-gw-link .3s linear .2s 1 normal 300ms 0 ease;
+	animation: ani-gw-link .3s linear .2s 1 normal 300ms 0 ease;
+	-moz-animation: ani-gw-link .3s linear .2s 1 normal;
+	-webkit-animation: ani-gw-link .3s linear .2s 1 normal;
+	-o-animation: ani-gw-link .3s linear .2s 1 normal;
+	-ms-animation: ani-gw-link .3s linear .2s 1 normal;
+	animation: ani-gw-link .3s linear .2s 1 normal
+}
+
+@-webkit-keyframes ani-gw-link {
+	0% {
+		-webkit-transform: translate(0, 0)
+	}
+	50% {
+		-webkit-transform: translate(0, 3px)
+	}
+	100% {
+		-webkit-transform: translate(0, 0)
+	}
+}
+
+@-moz-keyframes ani-gw-link {
+	0% {
+		-moz-transform: translate(0, 0)
+	}
+	50% {
+		-moz-transform: translate(0, 3px)
+	}
+	100% {
+		-moz-transform: translate(0, 0)
+	}
+}
+
+@-o-keyframes ani-gw-link {
+	0% {
+		-o-transform: translate(0, 0)
+	}
+	50% {
+		-o-transform: translate(0, 3px)
+	}
+	100% {
+		-o-transform: translate(0, 0)
+	}
+}
+
+@-ms-keyframes ani-gw-link {
+	0% {
+		-ms-transform: translate(0, 0)
+	}
+	50% {
+		-ms-transform: translate(0, 3px)
+	}
+	100% {
+		-ms-transform: translate(0, 0)
+	}
+}
+
+@keyframes ani-gw-link {
+	0% {
+		transform: translate(0, 0)
+	}
+	50% {
+		transform: translate(0, 3px)
+	}
+	100% {
+		transform: translate(0, 0)
+	}
+}
+
+.con-wrap5 .hot-bg-img {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: all 1s ease-out;
+	-moz-transition: all 1s ease-out;
+	-ms-transition: all 1s ease-out;
+	-o-transition: all 1s ease-out;
+	transition: all 1s ease-out
+}
+
+.con-wrap5 .hot-link i {
+	position: absolute;
+	width: 56px;
+	height: 56px;
+	margin-left: -28px;
+	margin-top: -28px;
+	left: 50%;
+	top: 50%;
+	background: url(http://res.nie.netease.com/nie/gw/15v1/img/play_af9d281.png) no-repeat
+}
+
+.con-wrap5 .hot-link:hover .hot-bg-img {
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transform: scale(1.1)
+}
+
+.con-wrap3 {
+	padding: 0 0 40px;
+	background-color: #fff;
+	min-height: 425px
+}
+
+.con-wrap3 .con-box {
+	border-left: 1px #eee solid;
+	border-right: 1px #eee solid;
+	width: 1258px
+}
+
+.con-wrap3 .nav-box-con .nav-box-title {
+	padding: 25px 0;
+	background: #fbfbfb;
+	border-left: 1px #eee solid
+}
+
+.con-wrap3 .nav-box-con .nav-box-title em {
+	font-size: 16px;
+	color: #222
+}
+
+.con-wrap3 .nav-box-con1 .nav-box-title {
+	border-left: 0
+}
+
+.con-wrap3 .nav-li-box {
+	margin: 0;
+	padding-top: 20px;
+	border-left: 1px #eee solid
+}
+
+.con-wrap3 .nav-li-box h2 {
+	position: relative;
+	font-size: 14px;
+	color: #c21d35;
+	text-indent: 40px;
+	font-weight: 700
+}
+
+.con-wrap3 .nav-li-box a {
+	color: #666
+}
+
+.con-wrap3 .nav-li-box a:hover {
+	font-weight: 700;
+	color: #666
+}
+
+.con-wrap3 .nav-li-box .li-bg {
+	display: none
+}
+
+.con-wrap3 .nav-li-box .li-txt {
+	display: none
+}
+
+.con-wrap3 .cha-list {
+	position: relative;
+	text-align: center;
+	color: #5a5a5a;
+	font-size: 12px;
+	margin-top: 20px
+}
+
+.con-wrap3 .nav-change-box {
+	position: relative;
+	margin: 20px auto;
+	width: 120px;
+	height: 50px
+}
+
+.con-wrap3 .nav-change-box a {
+	position: relative;
+	border: 1px #f1f1f1 solid;
+	background: #f1f1f1;
+	width: 58px;
+	height: 48px;
+	float: left;
+	display: block
+}
+
+.con-wrap3 .nav-change-box a.cur {
+	border: 1px #c5c5c5 solid
+}
+
+.con-wrap3 .nav-change-box a i {
+	display: block;
+	margin: 14px 19px;
+	width: 20px;
+	height: 20px
+}
+
+.con-wrap3 .nav-change-box .fis-style i {
+	background: url(http://res.nie.netease.com/nie/gw/15v1/include/_icon2_61610a3.png) no-repeat
+}
+
+.con-wrap3 .nav-change-box .fis-style.cur i {
+	background: url(http://res.nie.netease.com/nie/gw/15v1/include/_icon1_b54305b.png) no-repeat
+}
+
+.con-wrap3 .nav-change-box .sed-style i {
+	background: url(http://res.nie.netease.com/nie/gw/15v1/include/_icon4_2364151.png) no-repeat
+}
+
+.con-wrap3 .nav-change-box .sed-style.cur i {
+	background: url(http://res.nie.netease.com/nie/gw/15v1/include/_icon3_aaaaab5.png) no-repeat
+}
+
+.sedStyle {
+	position: relative;
+	width: 100%;
+	min-width: 1260px;
+	overflow: hidden
+}
+
+.sedStyle .con-box {
+	position: relative;
+	margin-left: 0;
+	border: 0
+}
+
+.sedStyle .nav-box-con .nav-box-title {
+	display: none
+}
+
+.sedStyle .nav-li-box {
+	overflow: hidden
+}
+
+.sedStyle .nav-li-box .icon-H {
+	display: none
+}
+
+.sedStyle .nav-li-box .icon-N {
+	display: none
+}
+
+.sedStyle .nav-li-box h2 {
+	position: relative;
+	font-size: 16px;
+	color: #222;
+	text-indent: 36px;
+	border-left: 4px #cf1132 solid
+}
+
+.sedStyle .nav-li-box ul {
+	position: relative;
+	padding: 30px 0 30px 75px
+}
+
+.sedStyle .nav-li-box li {
+	float: left;
+	position: relative;
+	*margin: 5px 0;
+	margin-right: 46px;
+	width: 64px;
+	height: 64px
+}
+
+.sedStyle .nav-li-box li:hover .li-txt {
+	display: block
+}
+
+.sedStyle .nav-li-box li a {
+	width: 64px;
+	height: 64px;
+	overflow: hidden;
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+	border-radius: 5px;
+	position: relative;
+	display: block;
+	line-height: 0;
+	text-indent: -99999px
+}
+
+.sedStyle .nav-li-box li a:hover .li-bg {
+	top: 0;
+	left: 0
+}
+
+.sedStyle .nav-li-box li img {
+	width: 150%;
+	height: 150%;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	position: relative;
+	display: block;
+	top: -25%;
+	left: -25%
+}
+
+.sedStyle .nav-li-box .ebox {
+	margin-left: -54px;
+	clear: left
+}
+
+.sedStyle .nav-li-box .li-bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(221, 17, 54, .5);
+	-webkit-transition: all .3s ease-out;
+	-moz-transition: all .3s ease-out;
+	-ms-transition: all .3s ease-out;
+	-o-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+	top: -100%;
+	left: -100%;
+	display: block
+}
+
+.sedStyle .nav-li-box .li-txt {
+	position: absolute;
+	width: 120px;
+	left: -40px;
+	top: -20%;
+	color: #cf0f32;
+	background: #fff;
+	padding: 3px;
+	text-align: center;
+	border: 2px #eee solid
+}
+
+.sedStyle .cha-list {
+	display: none
+}
+
+.con-wrap4 {
+	background-color: #000;
+	background: url(http://res.nie.netease.com/nie/gw/15v1/img/center_bg_ef61054.jpg) center top no-repeat;
+	padding-top: 310px
+}
+
+.con-wrap4 .con-box {
+	width: 100%;
+	min-width: 1260px;
+	height: 370px
+}
+
+.center-show {
+	position: relative;
+	height: 100%;
+	float: left;
+	width: 25%;
+	overflow: hidden
+}
+
+.center-show.last-child {
+	*margin-left: -3px
+}
+
+.center-show em {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	background-position: center center
+}
+
+.center-show span {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	text-align: center;
+	font-size: 20px;
+	line-height: 34px;
+	color: #fff;
+	top: 50%;
+	margin-top: -34px;
+	-webkit-transition: all .5s linear;
+	-moz-transition: all .5s linear;
+	-ms-transition: all .5s linear;
+	-o-transition: all .5s linear;
+	transition: all .5s linear
+}
+
+.center-show .center-bg {
+	top: 0;
+	background-position: center center;
+	-webkit-transition: all 1s linear;
+	-moz-transition: all 1s linear;
+	-ms-transition: all 1s linear;
+	-o-transition: all 1s linear;
+	transition: all 1s linear
+}
+
+.center-show .font1 {
+	top: 0;
+	background: #000;
+	opacity: .6;
+	filter: alpha(opacity=60);
+	-webkit-transition: all .5s ease-out;
+	-moz-transition: all .5s ease-out;
+	-ms-transition: all .5s ease-out;
+	-o-transition: all .5s ease-out;
+	transition: all .5s ease-out
+}
+
+.center-show .font2 {
+	bottom: -50%;
+	height: 50%;
+	background: #cf0f32;
+	opacity: .9;
+	filter: alpha(opacity=90);
+	-webkit-transition: all .5s ease-in;
+	-moz-transition: all .5s ease-in;
+	-ms-transition: all .5s ease-in;
+	-o-transition: all .5s ease-in;
+	transition: all .5s ease-in
+}
+
+.center-show:hover .center-bg {
+	background-position: center center
+}
+
+.center-show:hover .font1 {
+	top: 100%
+}
+
+.center-show:hover .font2 {
+	bottom: 0
+}
+
+.center-show:hover span {
+	top: 75%
+}
+
+.con-wrap6 {
+	background-color: #fff
+}
+
+.con-wrap6 .con-box {
+	padding: 40px 0
+}
+
+.link-li-box {
+	position: relative;
+	float: left;
+	margin-right: 14px
+}
+
+.link-li-box p {
+	text-indent: 30px;
+	font-size: 16px;
+	line-height: 16px;
+	margin-bottom: 20px;
+	color: #888;
+	background: url(http://res.nie.netease.com/nie/gw/15v1/img/l-icon_01b84e0.png) 0 bottom no-repeat
+}
+
+.link-li-box a {
+	position: relative;
+	float: left;
+	width: 150px;
+	padding: 10px 0;
+	margin-right: 2px;
+	margin-bottom: 2px;
+	background: #e3e3e3;
+	text-align: center;
+	text-decoration: none;
+	-webkit-transition: all .3s ease-in;
+	-moz-transition: all .3s ease-in;
+	-ms-transition: all .3s ease-in;
+	-o-transition: all .3s ease-in;
+	transition: all .3s ease-in
+}
+
+.link-li-box a:hover {
+	text-decoration: none;
+	background: #cf1132
+}
+
+.link-li-box a:hover .txt1 {
+	color: #fff
+}
+
+.link-li-box a:hover .txt2 {
+	color: #fff
+}
+
+.link-li-box .txt1 {
+	color: #222;
+	font-size: 16px;
+	line-height: 30px;
+	text-align: center;
+	-webkit-transition: all .2s ease-out;
+	-moz-transition: all .2s ease-out;
+	-ms-transition: all .2s ease-out;
+	-o-transition: all .2s ease-out;
+	transition: all .2s ease-out
+}
+
+.link-li-box .txt2 {
+	color: gray;
+	font-size: 12px;
+	line-height: 30px;
+	text-align: center;
+	-webkit-transition: all .2s ease-out;
+	-moz-transition: all .2s ease-out;
+	-ms-transition: all .2s ease-out;
+	-o-transition: all .2s ease-out;
+	transition: all .2s ease-out
+}
+
+.link-li-box1 {
+	width: 152px
+}
+
+.link-li-box2 {
+	width: 304px
+}
+
+.link-li-box3 {
+	width: 152px
+}
+
+.link-li-box4 {
+	width: 608px;
+	margin-right: 0
+}
+
+.con-wrap6-other {
+	width: 100%;
+	float: left;
+	margin-top: 30px;
+	font-size: 12px;
+	color: #d9dde1
+}
+
+.con-wrap6-other a {
+	color: #888;
+	font-size: 12px
+}
+
+.con-wrap6-other a:hover {
+	color: #cf1132
+}
+
+.con-wrap6-other span {
+	font-size: 14px;
+	color: #454240
+}
+
+.con-wrap6-other .phone-tips {
+	margin-left: 430px
+}
+
+.con-wrap6-other .phone-num {
+	font-size: 18px;
+	color: #909090
+}
+
+.head-adBox {
+	position: relative;
+	width: 100%;
+	height: 760px;
+	overflow: hidden;
+	display: none
+}
+
+.head-adBox .head-adBg {
+	position: absolute;
+	width: 100%;
+	height: 760px;
+	bottom: 0;
+	left: 0;
+	background: url(http://res.nie.netease.com/nie/gw/15v1/img/h_ad_cover_2aae3be.png) repeat
+}
+
+.head-adBox .head-adBg-video {
+	position: absolute;
+	width: 100%;
+	height: 760px;
+	*height: 750px;
+	bottom: 0;
+	left: 0
+}
+
+.head-adBox .head-advideo {
+	width: 1920px;
+	height: 760px;
+	*height: 750px;
+	z-index: 1;
+	position: absolute;
+	left: 50%;
+	margin-left: -960px
+}
+
+.head-adBox .head-ad-title {
+	position: absolute;
+	z-index: 3;
+	top: 0;
+	left: 50%;
+	width: 1067px;
+	height: 364px;
+	margin-top: 218px;
+	margin-left: -533px;
+	display: block
+}
+
+.head-adBox .head-ad-title img {
+	width: 100%;
+	height: 100%
+}
+
+.head-adBox .head-ad-goban {
+	position: absolute;
+	z-index: 3;
+	bottom: 90px;
+	left: 50%;
+	margin-left: -70px;
+	width: 141px;
+	height: 56px;
+	display: block;
+	background: url(http://res.nie.netease.com/nie/gw/15v1/img/go_ban_7924ba6.png) no-repeat
+}
+
+.head-adBox .hadc1 {
+	position: absolute;
+	width: 63px;
+	height: 30px;
+	left: 50%;
+	z-index: 3;
+	margin-left: -32px;
+	bottom: 30px;
+	background: url(http://res.nie.netease.com/nie/gw/15v1/img/close_7a419a3.png) no-repeat
+}
+
+.head-adBox .h-dacontent {
+	position: relative;
+	width: 1260px;
+	margin: 0 auto
+}
+
+.head-adBox .h-dacontent a {
+	position: absolute;
+	width: 120px;
+	height: 120px;
+	right: 0;
+	top: 0;
+	background: url(http://res.nie.netease.com/nie/gw/15v1/img/close_7a419a3.png) no-repeat;
+	z-index: 10
+}
+
+.topBar.hasAd {
+	background: rgba(225, 225, 225, .5);
+	opacity: 1;
+	z-index: 5;
+	-webkit-transition: all .5s ease-out;
+	-moz-transition: all .5s ease-out;
+	-ms-transition: all .5s ease-out;
+	-o-transition: all .5s ease-out;
+	transition: all .5s ease-out
+}
+
+.topBar.hasAd .topBoxlist a {
+	color: #fff;
+	color: #888\0;
+	*color: #888;
+	-webkit-transition: all .5s ease-out;
+	-moz-transition: all .5s ease-out;
+	-ms-transition: all .5s ease-out;
+	-o-transition: all .5s ease-out;
+	transition: all .5s ease-out
+}
+
+.g-listBox .morenews {
+	background-position: 0px 0px
+}
+
+.head-ctrl a {
+	background-position: -37px 0px
+}
+
+.head-ctrl a:hover,
+.head-ctrl a.cur {
+	background-position: 0px -37px
+}
+
+.g-hotBox .reload i {
+	background-position: -20px -37px
+}
+
+.g-banBox .ctrl a {
+	background-position: -37px -20px
+}
+
+.g-banBox .ctrl a:hover,
+.g-banBox .ctrl a.cur {
+	background-position: -47px -20px
+}
+
+.g-listBox .morenews,
+.head-ctrl a,
+.head-ctrl a:hover,
+.head-ctrl a.cur,
+.g-hotBox .reload i,
+.g-banBox .ctrl a,
+.g-banBox .ctrl a:hover,
+.g-banBox .ctrl a.cur {
+	background-size: 57px 57px;
+	background-image: url(http://res.nie.netease.com/nie/gw/15v1/img/spriter/index_1_z_8fedf32.png)
+}
